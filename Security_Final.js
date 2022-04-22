@@ -121,14 +121,17 @@ $.validator.setDefaults({
 			
 				
 				//display to output
-				$('#pageContent').append("<br><br>Name: " + Name1 + " " + Name2+ " " + Name3)
-						 .append("<br> Age: " + Age)
-						 .append("<br> Voting Center ID: " + VC)
-						.append("<br> Password: " + Password)
-						 .append("<br> Phone: " + Phone)
-						.append("<br> Email: " + Email)
-						 .append("<br> Username: " + userName)
-		                                .append("<br> Candidate Vote: " + Candidates);
+				$('#pageContent').append("<br> Candidate Vote: " + Candidates);
+					
+					
+						//.append("<br><br>Name: " + Name1 + " " + Name2+ " " + Name3)
+						 //.append("<br> Age: " + Age)
+						 //.append("<br> Voting Center ID: " + VC)
+						//.append("<br> Password: " + Password)
+						 //.append("<br> Phone: " + Phone)
+						//.append("<br> Email: " + Email)
+						 //.append("<br> Username: " + userName)
+		                                
 			
 			},
 			
