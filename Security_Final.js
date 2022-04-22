@@ -124,12 +124,11 @@ $.validator.setDefaults({
 				$('#pageContent').append("<br><br>Name: " + Name1 + " " + Name2+ " " + Name3)
 						 .append("<br> Age: " + Age)
 						 .append("<br> Voting Center ID: " + VC)
-						 .append("<br> Candidate Vote: " + Candidates)
 						.append("<br> Password: " + Password)
 						 .append("<br> Phone: " + Phone)
 						.append("<br> Email: " + Email)
-						 .append("<br> Username: " + userName);
-		
+						 .append("<br> Username: " + userName)
+		                                .append("<br> Candidate Vote: " + Candidates);
 			
 			},
 			
@@ -225,7 +224,7 @@ $("#basicForm").validate({          //begin rules
 				password: {						
 					required: "Please provide a password",
 					minlength: $.validator.format("Must have at least {0} characters")
-				}
+				},
                         },	
 			//end messages
 				
