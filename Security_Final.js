@@ -1,4 +1,4 @@
-// Mitchell Coffey
+
 //Final project page javascript
 
 $(document).ready(function() {
@@ -124,15 +124,13 @@ $.validator.setDefaults({
 				
 				//display to output
 				$('#pageContent').append("<br><br>Name: " + Name1 + " " + Name2+ " " + Name3)
-								 .append("<br> Age: " + Age)
-								 .append("<br> Voting Center ID: " + VC)
-							     .append("<br> Candidate Vote: " + Candidates);
-								 
-								 
-						//		 .append("<br> Password: " + Password)
-						//		 .append("<br> Phone: " + Phone)
-						//		 .append("<br> Email: " + Email)
-						//		 .append("<br> Username: " + userName)
+						 .append("<br> Age: " + Age)
+						 .append("<br> Voting Center ID: " + VC)
+						 .append("<br> Candidate Vote: " + Candidates)
+						.append("<br> Password: " + Password)
+						 .append("<br> Phone: " + Phone)
+						.append("<br> Email: " + Email)
+						 .append("<br> Username: " + userName);
 		
 			
 			},
@@ -168,26 +166,26 @@ $("#basicForm").validate({          //begin rules
 					number: true,
 					min: 18
 				},
-		},
-		//		phone: {							
-		//			required: true,
-		//			digits: true,
-		//			maxlength: 10
-		//		},
-		//		email: {							
-		//			required: true,
-		//			email: true
-		//		},
-		//		username: {						
-		//			required: true,
-		//			maxlength: 10
-		//		},
-		//		password: {							
-		//			required: true,
-		//			minlength: 5
-		//		}
+		
+				phone: {							
+					required: true,
+					digits: true,
+					maxlength: 10
+				},
+				email: {							
+					required: true,
+					email: true
+				},
+				username: {						
+					required: true,
+					maxlength: 10
+				},
+				password: {							
+					required: true,
+					minlength: 5
+				},
 				
-	
+			},
 			 //end rules
 			                             
 				messages: {           //being messages   
@@ -213,25 +211,24 @@ $("#basicForm").validate({          //begin rules
 					min: $.validator.format("Must be 18 years or older to register")
 				},
 				
-			},
-	//			phone: {							
-    //			    required: "Please enter a phone number",
-	//				digits: "Please enter digits only",
-	//				maxlength: 10
-	//			},
-	//			email: {							
-	//				required: "Please enter an email address",
-	//				email: "Please enter a valid email address"
-	//			},
-	//			username: {						
-	//				required: "Please provide a user name",
-	//				minlength: $.validator.format("Must have at least {0} characters")
-	//			},
-	//			password: {						
-	//				required: "Please provide a password",
-	//				minlength: $.validator.format("Must have at least {0} characters")
-	//			}
-				
+				phone: {							
+    	  	                 	    required: "Please enter a phone number",
+					digits: "Please enter digits only",
+					maxlength: 10
+				},
+				email: {							
+					required: "Please enter an email address",
+					email: "Please enter a valid email address"
+				},
+				username: {						
+					required: "Please provide a user name",
+					minlength: $.validator.format("Must have at least {0} characters")
+				},
+				password: {						
+					required: "Please provide a password",
+					minlength: $.validator.format("Must have at least {0} characters")
+				}
+                        },	
 			//end messages
 				
 }); //end validation
