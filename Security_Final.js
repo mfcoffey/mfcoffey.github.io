@@ -108,12 +108,10 @@ $.validator.setDefaults({
 				var Name3= $('#name3').val();	
 				var Age= $('#age').val();
 				var Candidates = "";	
-				
-				
-			//	var Phone = $('#phone').val();						
-			//	var Email = $('#email').val();					
-			//	var userName = $('#username').val();	
-			//	var Password = $('#password').val();	
+				var Phone = $('#phone').val();						
+				var Email = $('#email').val();					
+				var userName = $('#username').val();	
+				var Password = $('#password').val();	
 														
 						
 			
